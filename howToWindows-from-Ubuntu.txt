@@ -12,8 +12,8 @@ sudo apt-get install -y build-essential libtool autotools-dev automake pkg-confi
 
 1.1) And you'll need to download the source-code from PIVX project https://github.com/PIVX-Project/PIVX/releases/tag/v3.1.0
 
-git clone https://github.com/XBIncognito/bitcoinincognito.git 
-wget https://github.com/PIVX-Project/PIVX/releases/tag/v3.1.0
+git clone https://github.com/XBIncognito/public.git 
+wget https://github.com/PIVX-Project/PIVX/releases/tag/v3.1.0 (or just go to the site and download the zip)
 
 [note] I assume you know your way around copy&paste in linux. Some command line stuff may be needed here !!
 
