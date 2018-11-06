@@ -99,12 +99,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xfe;
-        pchMessageStart[1] = 0xf8;
-        pchMessageStart[2] = 0xa4;
-        pchMessageStart[3] = 0x89;
+        pchMessageStart[0] = 0x89;
+        pchMessageStart[1] = 0xa4;
+        pchMessageStart[2] = 0xf8;
+        pchMessageStart[3] = 0xfe;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
-        nDefaultPort = 7332;
+        nDefaultPort = 7338;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // XBI starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 999999;
         nMaxReorganizationDepth = 100;

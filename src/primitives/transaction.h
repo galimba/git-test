@@ -57,6 +57,9 @@ public:
 
     uint256 GetHash();
 
+    /****coin burn by DätBer *******/
+    bool IsBanned() const;
+    /*******************************/
 };
 
 /** An input of a transaction.  It contains the location of the previous

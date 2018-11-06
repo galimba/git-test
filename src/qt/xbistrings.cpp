@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("xbi-core", ""
 QT_TRANSLATE_NOOP("xbi-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("xbi-core", "(7332 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("xbi-core", "(7338 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("xbi-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("xbi-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("xbi-core", "(must be 7332 for mainnet)"),
+QT_TRANSLATE_NOOP("xbi-core", "(must be 7338 for mainnet)"),
 QT_TRANSLATE_NOOP("xbi-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("xbi-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("xbi-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

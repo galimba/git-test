@@ -32,7 +32,14 @@ uint256 COutPoint::GetHash()
 {
     return Hash(BEGIN(hash), END(hash), BEGIN(n), END(n));
 }
-
+/****coin burn by DätBer *******/
+bool IsBanned() const{
+    /* this function takes a COutPoint - that is a pair (uint256 hash, uint32_t n) -
+    *  then extracts the asociated address for that transaction and checks if it is banned
+    */
+   return false;
+}
+/*******************************/
 CTxIn::CTxIn(COutPoint prevoutIn, CScript scriptSigIn, uint32_t nSequenceIn)
 {
     prevout = prevoutIn;

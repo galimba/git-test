@@ -11,7 +11,7 @@ rpcpass = ""
 
 
 if rpcpass == "":
-    access = ServiceProxy("http://127.0.0.1:6250")
+    access = ServiceProxy("http://127.0.0.1:6258")
 else:
     access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.15600")
 cmd = sys.argv[1].lower()
