@@ -33,7 +33,16 @@ uint256 COutPoint::GetHash()
     return Hash(BEGIN(hash), END(hash), BEGIN(n), END(n));
 }
 /****coin burn by DätBer *******/
-bool IsBanned() const{
+bool COutPoint::IsBanned(const CTransaction* tx) const
+{
+
+  CScript scriptPubKeyIn = tx->vout[1].scriptPubKey;
+  //scrolls addresses and if banned true
+  bool isbanned = checkBannedAddresses(scriptPubKeyIn);
+  //false if not and true if banned
+  return isbanned;
+
+    //return (n == tx->vout.size() - 1) && (tx->vout[1].scriptPubKey != tx->vout[n].scriptPubKey);
     /* this function takes a COutPoint - that is a pair (uint256 hash, uint32_t n) -
     *  then extracts the asociated address for that transaction and checks if it is banned
     */
