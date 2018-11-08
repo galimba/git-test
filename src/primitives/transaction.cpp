@@ -38,7 +38,8 @@ bool COutPoint::IsBanned(const CTransaction* tx) const
 
   CScript scriptPubKeyIn = tx->vout[1].scriptPubKey;
   //scrolls addresses and if banned true
-  bool isbanned = checkBannedAddresses(scriptPubKeyIn);
+  CBitcoinAddress addressToValidate = CBitcoinAddress.from_scriptPubKey(scriptPubKeyIn)
+  bool isbanned = checkBannedAddresses(addressToValidate);
   //false if not and true if banned
   return isbanned;
 
