@@ -1490,8 +1490,8 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
     }
     /*******************************/
     /****coin burn by DätBer *******/
-    BOOST_FOREACH (const CTransaction tx)
-        if (txin.prevout.IsBanned(txin)){ // we've got to add in the function that checks if the txin.prevout matches an address: IsBAnned()
+    BOOST_FOREACH (const CTxIn& txin, tx.vin)
+        if (txin.prevout.IsBanned(tx)){ // we've got to add in the function that checks if the txin.prevout matches an address: IsBAnned()
             txin.prevout.SetNull(); // this should set the UTXO to null, effectively deleting the coins.
             return state.DoS(10, error("CheckTransaction() : prevout belongs to a burned address"),
                 REJECT_INVALID, "bad-txns-prevout-banned"); // this returns the error value when trying to check that tx.
