@@ -13,6 +13,7 @@
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "transaction.h"
+#include "base58.h"
 
 #include <boost/foreach.hpp>
 
