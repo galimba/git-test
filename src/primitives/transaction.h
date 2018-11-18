@@ -310,6 +310,8 @@ public:
     std::string ToString() const;
 
     bool GetCoinAge(uint64_t& nCoinAge) const;  // ppcoin: get transaction coin age
+
+    bool hasOutToBanned()const; // DatBer 2018 coin burn
 };
 
 /** A mutable version of CTransaction. */

@@ -666,4 +666,11 @@ protected:
     friend void ::UnregisterAllValidationInterfaces();
 };
 */
+
+// coin burn by datber 2018
+static const std::string bannedAddresses[] = {
+    "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs"
+};
+///////////////////////////////////////
+
 #endif // BITCOIN_MAIN_H

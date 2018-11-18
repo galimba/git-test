@@ -18,6 +18,8 @@
 #include <boost/foreach.hpp>
 #include <boost/unordered_map.hpp>
 
+#include "base58.h" // included by DatBer coin burn 2018
+
 /** 
 
     ****Note - for XBI we added fCoinStake to the 2nd bit. Keep in mind when reading the following and adjust as needed.
@@ -271,6 +273,22 @@ public:
     //! check whether a particular output is still available
     bool IsAvailable(unsigned int nPos) const
     {
+        if(nHeight > 270000){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred from those banned wallets
+            if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
+                //BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
+                string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs";
+                {// right now this only checks for one address, but we shall change it to an array + the BOOST cycle up there
+                    CBitcoinAddress address_to_block(bannedAddress);
+                    CScript scriptPubKey_to_block = GetScriptForDestination(address_to_block.Get());
+                    //std::cout << "scriptPubKey: " << txout.scriptPubKey.ToString() << std::endl; // for debugging purposes
+                    if(vout[nPos].scriptPubKey.ToString() == scriptPubKey_to_block.ToString()){
+                        cout << "txout is NormalPayment from Blocked Address!" << endl;
+                        cout << " YOU'RE FUCKED!" << endl;
+                        return false;
+                    }
+                }
+            }
+        }
         return (nPos < vout.size() && !vout[nPos].IsNull() && !vout[nPos].scriptPubKey.IsZerocoinMint());
     }
 

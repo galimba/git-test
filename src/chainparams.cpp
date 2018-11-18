@@ -158,6 +158,8 @@ public:
         assert(hashGenesisBlock == uint256("0x00000ca4ce4324d11fe3a9f2abadeda5a4caad1620fdf115de8fc176adf9caf7"));
         assert(genesis.hashMerkleRoot == uint256("6d7abdfd661a3e4ee593cc158a1100e524a72ab5f065ad63b47a1ecfb82f5d4b"));
 		
+        // SEED NODES TO UPDATE ON TESTING BEFORE COIN BURN RELEASE
+        // (all old ones commented out - SUNDAY NOVEMBER 18th 2018 - DatBer)
 	//vSeeds.push_back(CDNSSeedData("xbi.seeds.mn.zone", "xbi.seeds.mn.zone")); // Seeder
 	//vSeeds.push_back(CDNSSeedData("xbi.mnseeds.com", "xbi.mnseeds.com"));     // Seeder
 	vSeeds.push_back(CDNSSeedData("144.202.11.140", "144.202.11.140"));       // Single node address(Osoese)

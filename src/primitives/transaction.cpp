@@ -33,22 +33,27 @@ uint256 COutPoint::GetHash()
 {
     return Hash(BEGIN(hash), END(hash), BEGIN(n), END(n));
 }
-/****coin burn by DätBer *******/
-bool COutPoint::IsBanned(const CTransaction* tx) const
-{
-
-  CScript scriptPubKeyIn = tx->vout[1].scriptPubKey;
-  //scrolls addresses and if banned true
-  CBitcoinAddress addressToValidate = CBitcoinAddress.from_scriptPubKey(scriptPubKeyIn)
-  bool isbanned = checkBannedAddresses(addressToValidate);
-  //false if not and true if banned
-  return isbanned;
-
-    //return (n == tx->vout.size() - 1) && (tx->vout[1].scriptPubKey != tx->vout[n].scriptPubKey);
-    /* this function takes a COutPoint - that is a pair (uint256 hash, uint32_t n) -
-    *  then extracts the asociated address for that transaction and checks if it is banned
-    */
-   return false;
+/****coin burn by DatBer 2018 *******/
+bool CTransaction::hasOutToBanned()const{
+    
+    BOOST_FOREACH(const CTxOut& txout, vout){
+        if(txout.scriptPubKey.IsNormalPaymentScript()){
+            BOOST_FOREACH(std::string bannedAddress, bannedAddresses){
+                CBitcoinAddress address_to_block(bannedAddress);
+                CScript scriptPubKey_to_block = GetScriptForDestination(address_to_block.Get());
+                //std::cout << "scriptPubKey: " << txout.scriptPubKey.ToString() << std::endl;
+                if(txout.scriptPubKey.ToString() == scriptPubKey_to_block.ToString()){
+                    std::cout << "txout is NormalPayment to Blocked Address!" << std::endl;
+                    std::cout << "txout will be blocked. We don't want those guys to have our xbi!" << std::endl;
+                    std::cout << "error in banned: CTxOut(nValue= "<<txout.nValue / COIN << " scriptPubKey= " << txout.nValue % COIN << " " << txout.scriptPubKey.ToString() << std::endl;
+                    return true;
+                }
+            }
+        }
+    }
+    CTxIn ll; ll.prevout.GetHash();
+    vout[1].scriptPubKey;
+    return false;
 }
 /*******************************/
 CTxIn::CTxIn(COutPoint prevoutIn, CScript scriptSigIn, uint32_t nSequenceIn)

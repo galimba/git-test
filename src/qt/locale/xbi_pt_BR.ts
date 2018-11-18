@@ -3490,8 +3490,8 @@ https://www.transifex.com/xbi-project/xbi-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(7332 could be used only on mainnet)</source>
-        <translation>(7332 could be used only on mainnet)</translation>
+        <source>(7338 could be used only on mainnet)</source>
+        <translation>(7338 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/xbi-project/xbi-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 7332 for mainnet)</source>
-        <translation>(deve ser 7332 para mainnet)</translation>
+        <source>(must be 7338 for mainnet)</source>
+        <translation>(deve ser 7338 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
