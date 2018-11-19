@@ -273,10 +273,15 @@ public:
     //! check whether a particular output is still available
     bool IsAvailable(unsigned int nPos) const
     {
+        // coin burn by datber 2018
+        static const std::string bannedAddresses[] = {
+            "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs"
+        };
+        ///////////////////////////////////////
         if(nHeight > 270000){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred from those banned wallets
             if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
-                //BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
-                string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs";
+                BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
+                //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs";
                 {// right now this only checks for one address, but we shall change it to an array + the BOOST cycle up there
                     CBitcoinAddress address_to_block(bannedAddress);
                     CScript scriptPubKey_to_block = GetScriptForDestination(address_to_block.Get());
