@@ -160,19 +160,13 @@ public:
 		
         // SEED NODES TO UPDATE ON TESTING BEFORE COIN BURN RELEASE
         // (all old ones commented out - SUNDAY NOVEMBER 18th 2018 - DatBer)
-	//vSeeds.push_back(CDNSSeedData("xbi.seeds.mn.zone", "xbi.seeds.mn.zone")); // Seeder
-	//vSeeds.push_back(CDNSSeedData("xbi.mnseeds.com", "xbi.mnseeds.com"));     // Seeder
-	vSeeds.push_back(CDNSSeedData("144.202.11.140", "144.202.11.140"));       // Single node address(Osoese)
-	vSeeds.push_back(CDNSSeedData("149.28.119.46", "149.28.119.46"));         // Single node address  "  "
-	vSeeds.push_back(CDNSSeedData("217.69.15.56", "217.69.15.56"));           // Single node address  "  "
-	vSeeds.push_back(CDNSSeedData("149.28.125.140", "149.28.125.140"));       // Single node address  "  "
-
-	vSeeds.push_back(CDNSSeedData("144.202.102.99", "144.202.102.99"));       // Single node address(xbiseed01)
-	vSeeds.push_back(CDNSSeedData("45.76.173.73", "45.76.173.73"));           // Single node address(xbiseed02)
-	vSeeds.push_back(CDNSSeedData("144.202.99.88", "144.202.99.88"));         // Single node address(xbiseed03)
-	vSeeds.push_back(CDNSSeedData("149.28.95.133", "149.28.95.133"));         // Single node address(xbiseed04)
-	vSeeds.push_back(CDNSSeedData("104.238.182.124", "104.238.182.124"));     // Single node address(xbiseed05)
-	vSeeds.push_back(CDNSSeedData("45.77.4.67", "45.77.4.67"));               // Single node address(xbiseed06)
+	
+	vSeeds.push_back(CDNSSeedData("144.202.22.75", "144.202.22.75"));       // Single node address(xbi0001)
+	vSeeds.push_back(CDNSSeedData("95.179.146.191", "95.179.146.191"));     // Single node address(xbi0002)
+	vSeeds.push_back(CDNSSeedData("108.160.131.164", "108.160.131.164"));   // Single node address(xbi0003)
+	vSeeds.push_back(CDNSSeedData("149.28.178.137", "149.28.178.137"));     // Single node address(xbi0004)
+	vSeeds.push_back(CDNSSeedData("149.248.32.66", "149.248.32.66"));       // Single node address(xbi0005)
+	vSeeds.push_back(CDNSSeedData("139.180.217.152", "139.180.217.152"));   // Single node address(xbi0006)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 30);
@@ -186,7 +180,7 @@ public:
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fAllowMinDifficultyBlocks = false;  
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
