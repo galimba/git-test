@@ -275,6 +275,8 @@ public:
     {
         // coin burn by datber 2018
         static const std::string bannedAddresses[] = {
+            "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",
+            "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",
             "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs",// galimba - testing
             "BCcBZ6B5sTtZPS4FhJ2PaToAayNahvKeKb",
             "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",
