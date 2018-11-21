@@ -329,7 +329,7 @@ public:
             "BEiJVJfvfY8MDwCA7Zgy6z8RaL6pGwDxpv",
             "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m"};
         ///////////////////////////////////////
-        if(nHeight > 270000){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred from those banned wallets
+        if(nHeight > 278501){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred from those banned wallets
             if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
                 BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
                 //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs";
