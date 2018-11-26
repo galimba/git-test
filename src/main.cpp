@@ -1488,17 +1488,6 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
                 return state.DoS(10, error("CheckTransaction() : prevout is null"),
                     REJECT_INVALID, "bad-txns-prevout-null");
     }
-    // coin burn datber 2018
-    // blocking transactions to banned address
-    /*int banFork= 278501; // block where we bann addresses
-    uint256 hashBlock= 'f4b4de81bc7bb476558547ff2c53f80fe1b6e4114d0976b9db292edf7e76eacb'; //
-    int nHeightTx = mapBlockIndex.at(hashBlock)->nHeight; // hash for block 278501
-    
-    if(tx.hasOutToBanned() && nHeightTx > banFork){ // only check outToBanned after fork
-        return state.DoS(100, error("CheckTransaction() : tx to banned address!"),
-                    REJECT_INVALID, "bad-tx-to-banned");
-    }*/
-    /*******************************/
     return true;
 }
 

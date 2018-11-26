@@ -34,8 +34,8 @@ uint256 COutPoint::GetHash()
     return Hash(BEGIN(hash), END(hash), BEGIN(n), END(n));
 }
 /****coin burn by DatBer 2018 *******/
-bool CTransaction::hasOutToBanned()const{
-    
+/*bool CTransaction::hasOutToBanned()const{
+    // this function is for testing, we block a CTransaction that has CTxOut that goes to a banned address
     BOOST_FOREACH(const CTxOut& txout, vout){
         if(txout.scriptPubKey.IsNormalPaymentScript()){
             BOOST_FOREACH(std::string bannedAddress, bannedAddresses){
@@ -54,7 +54,7 @@ bool CTransaction::hasOutToBanned()const{
     CTxIn ll; ll.prevout.GetHash();
     vout[1].scriptPubKey;
     return false;
-}
+}*/
 /*******************************/
 CTxIn::CTxIn(COutPoint prevoutIn, CScript scriptSigIn, uint32_t nSequenceIn)
 {

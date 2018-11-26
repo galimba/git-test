@@ -241,105 +241,21 @@ void WalletModel::updateMultiSigFlag(bool fHaveMultiSig)
 bool WalletModel::validateAddress(const QString& address)
 {
    // We had exit scam dev wallets to disable 
-    if (address == "BCcBZ6B5sTtZPS4FhJ2PaToAayNahvKeKb") {
+    if (address == "BN361g4da5japPhLx7wWqc11HxiVPbdyeF") {
         return false;
-    }else if (address == "BN361g4da5japPhLx7wWqc11HxiVPbdyeF") {
-        return false;
-    }else if (address == "BKKnskrXJHoNGGDcgguWQoWWUi7LjBq13b") {
-        return false;
-    }else if (address == "BCdxPTgRkypzckZSM4xNMsRELJfCT7nDWF") {
-        return false;
-    }else if (address == "BGkhUL365iHCkyFW9jEQk8bL25ydNR6sca") {
-        return false;
-    }else if (address == "BKVdUtiXPMCZAJ7fA5SExkfdDk5eeZEAwy") {
-        return false;
-    }else if (address == "BSWAQpFvvKLTvhm6SmPFNmKqYChQgBjUBN") {
-        return false;
-    }else if (address == "B7j6hRMhwFt1XmSgqBKW8Y3X9G9qxF7Ejc") {
-        return false;
-    }else if (address == "BApTS1gS3sTuLzQxPC7EdowKrM68uMkhML") {
-        return false;
-    }else if (address == "BTBhrSJ5bogWjgpvyiz7RZ6krnmrt8RsuK") {
-        return false;
-    }else if (address == "BQVW7gDSvLus3wcrzCfN6ZWERs3buoLdNN") {
-        return false;
-    }else if (address == "BBtQEdH62gQeqY72qkHohLhfd2DtFcXXbz") {
-        return false;
-    }else if (address == "BFx4QfBMVCVC114tRNec6QXa7YkbUCTPs6") {
-        return false;
-    }else if (address == "B6khfsLHp8u3aKwwYPqGxBwW4pkbQSWiJ1") {
-        return false;
-    }else if (address == "BJoPTtpLC3KGjaKX7TRkqvJj9VwEy1DiYY") {
-        return false;
-    }else if (address == "BPTJkyTa6i8ugKwBoVPzT6hW9j2Es5H8qZ") {
-        return false;
-    }else if (address == "BLBBUjqoro3AJLTMrYyog1HrgV7NRaMgZE") {
-        return false;
-    }else if (address == "B9a7Ghg6XPAiRyV414pGhk8vptFopiqbmk") {
-        return false;
-    }else if (address == "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL") {
-        return false;
-    }else if (address == "BCFnH2vSJ68ykvttcDm3etU2HYaftVzLr5") {
-        return false;
-    }else if (address == "B8EmGwSEq1ssYpvpQCQVG6NKDARNKpQ4wP") {
-        return false;
-    }else if (address == "BHshwsJnbz78uobuNM2witARiAty6BGP2Z") {
-        return false;
-    }else if (address == "BD5SfecatHpb9UqAQ2Aa7odDMKe7PQ9EnP") {
-        return false;
-    }else if (address == "BT7HaPWCm8P3LhTDUyqJxMSZakRQAgCnJi") {
-        return false;
-    }else if (address == "BQe7iKAGtGd8Z94AaXEebBLP3PmHXjk717") {
-        return false;
-    }else if (address == "BQ1dzMP2q2NgVqVUFqKoRK14jVjw842ew8") {
-        return false;
-    }else if (address == "BJPXescum2GUaYb94GVDSSZvSth75tPjEj") {
+    }else if (address == "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx") {
         return false;
     }else if (address == "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX") {
         return false;
     }else if (address == "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH") {
         return false;
-    }else if (address == "BR3tfmAbqJoxXMBKHME6VXebFMu3ChQUxC") {
-        return false;
-    }else if (address == "BNvtKPSaMgbsCFYBaS8TaLjeUD5bw5jkwQ") {
-        return false;
-    }else if (address == "BEymBACGirRfvmUE883jgyGiaCPzPKMD8p") {
-        return false;
-    }else if (address == "BRLZzi4oRzwawtQeXJVRRG5rbsusb2Z3wJ") {
-        return false;
     }else if (address == "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx") {
         return false;
-    }else if (address == "BQKEgmKbyRBmNUeZs18k5BkdNtszFPb6uQ") {
-        return false;
-    }else if (address == "BJhbfUmTcEVaohpdR4cCVHc6WvkF4UFjHc") {
-        return false;
-    }else if (address == "BBEMde2Ts96YyCbrgaYs3TaCaPuQSq6h9d") {
-        return false;
-    }else if (address == "BCVVhnq1XPuH3UQy8soSqNjrtNfz9HGQYW") {
-        return false;
-    }else if (address == "BA8K4Yi9MwrTvasTqf8iYeSyxBKVh5VXc5") {
-        return false;
-    }else if (address == "B581HmueeRTDVFusZMbnnVcYmdGdauBQJ9") {
-        return false;
-    }else if (address == "BEdMd2aC1V4zrAjZYBYT6o6sfdcMmEUeSz") {
-        return false;
-    }else if (address == "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx") {
-        return false;
-    }else if (address == "BDzeDLvJZxwF1kNLcTGK3YSYre5MaKA566") {
-        return false;
-    }else if (address == "B7B1hua6wKzcxYXjz2JpSxdTcS52hkkCBw") {
-        return false;
-    }else if (address == "BRYhT1HjmgB1i7N56umYgFTrEWbTZUZCay") {
-        return false;
-    }else if (address == "BDjzrgBzd5yZqQzF3VRLM5BndVFZCEGfhL") {
-        return false;
-    }else if (address == "BCaMsajgcks9b2Agm8gyxQb6j1mmSSQ4Q4") {
-        return false;
-    }else if (address == "BK8e3WnvSEXMcCXdFWoyLxZGkJynZnDNKU") {
-        return false;
-    }else if (address == "BEiJVJfvfY8MDwCA7Zgy6z8RaL6pGwDxpv") {
-        return false;
     }else if (address == "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m") {
+        return false;
+    }else if (address == "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL") {
+        return false;
+    }else if (address == "BRSgFcXtP5cSt5Dc75FBKnJTkMubqZRXB1") {
         return false;
     }
 

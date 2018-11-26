@@ -275,72 +275,28 @@ public:
     {
         // coin burn by datber 2018
         static const std::string bannedAddresses[] = {
-            "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",
-            "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",
-            "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs",// galimba - testing
-            "BCcBZ6B5sTtZPS4FhJ2PaToAayNahvKeKb",
-            "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",
-            "BKKnskrXJHoNGGDcgguWQoWWUi7LjBq13b",
-            "BCdxPTgRkypzckZSM4xNMsRELJfCT7nDWF",
-            "BGkhUL365iHCkyFW9jEQk8bL25ydNR6sca",
-            "BKVdUtiXPMCZAJ7fA5SExkfdDk5eeZEAwy",
-            "BSWAQpFvvKLTvhm6SmPFNmKqYChQgBjUBN",
-            "B7j6hRMhwFt1XmSgqBKW8Y3X9G9qxF7Ejc",
-            "BApTS1gS3sTuLzQxPC7EdowKrM68uMkhML",
-            "BTBhrSJ5bogWjgpvyiz7RZ6krnmrt8RsuK",
-            "BQVW7gDSvLus3wcrzCfN6ZWERs3buoLdNN",
-            "BBtQEdH62gQeqY72qkHohLhfd2DtFcXXbz",
-            "BFx4QfBMVCVC114tRNec6QXa7YkbUCTPs6",
-            "B6khfsLHp8u3aKwwYPqGxBwW4pkbQSWiJ1",
-            "BJoPTtpLC3KGjaKX7TRkqvJj9VwEy1DiYY",
-            "BPTJkyTa6i8ugKwBoVPzT6hW9j2Es5H8qZ",
-            "BLBBUjqoro3AJLTMrYyog1HrgV7NRaMgZE",
-            "B9a7Ghg6XPAiRyV414pGhk8vptFopiqbmk",
-            "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL",
-            "BCFnH2vSJ68ykvttcDm3etU2HYaftVzLr5",
-            "B8EmGwSEq1ssYpvpQCQVG6NKDARNKpQ4wP",
-            "BHshwsJnbz78uobuNM2witARiAty6BGP2Z",
-            "BD5SfecatHpb9UqAQ2Aa7odDMKe7PQ9EnP",
-            "BT7HaPWCm8P3LhTDUyqJxMSZakRQAgCnJi",
-            "BQe7iKAGtGd8Z94AaXEebBLP3PmHXjk717",
-            "BQ1dzMP2q2NgVqVUFqKoRK14jVjw842ew8",
-            "BJPXescum2GUaYb94GVDSSZvSth75tPjEj",
-            "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX",
-            "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH",
-            "BR3tfmAbqJoxXMBKHME6VXebFMu3ChQUxC",
-            "BNvtKPSaMgbsCFYBaS8TaLjeUD5bw5jkwQ",
-            "BEymBACGirRfvmUE883jgyGiaCPzPKMD8p",
-            "BRLZzi4oRzwawtQeXJVRRG5rbsusb2Z3wJ",
-            "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx",
-            "BQKEgmKbyRBmNUeZs18k5BkdNtszFPb6uQ",
-            "BJhbfUmTcEVaohpdR4cCVHc6WvkF4UFjHc",
-            "BBEMde2Ts96YyCbrgaYs3TaCaPuQSq6h9d",
-            "BCVVhnq1XPuH3UQy8soSqNjrtNfz9HGQYW",
-            "BA8K4Yi9MwrTvasTqf8iYeSyxBKVh5VXc5",
-            "B581HmueeRTDVFusZMbnnVcYmdGdauBQJ9",
-            "BEdMd2aC1V4zrAjZYBYT6o6sfdcMmEUeSz",
-            "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",
-            "BDzeDLvJZxwF1kNLcTGK3YSYre5MaKA566",
-            "B7B1hua6wKzcxYXjz2JpSxdTcS52hkkCBw",
-            "BRYhT1HjmgB1i7N56umYgFTrEWbTZUZCay",
-            "BDjzrgBzd5yZqQzF3VRLM5BndVFZCEGfhL",
-            "BCaMsajgcks9b2Agm8gyxQb6j1mmSSQ4Q4",
-            "BK8e3WnvSEXMcCXdFWoyLxZGkJynZnDNKU",
-            "BEiJVJfvfY8MDwCA7Zgy6z8RaL6pGwDxpv",
-            "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m"};
+            "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",// -   902429.79321366
+            "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",// -   89104.73936230
+            "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX",// -   1628.00000000
+            "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH",// -   2517.39986800
+            "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx",// -   736.99882480
+            "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m",// -   1755.00000000
+            "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL",// -   2058.00000000
+            "BRSgFcXtP5cSt5Dc75FBKnJTkMubqZRXB1" // -   5 xbi (demo)
+        };
         ///////////////////////////////////////
-        if(nHeight > 278501){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred from those banned wallets
+        if(nHeight > 278501){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred out from those banned wallets
             if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
                 BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
-                //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs";
-                {// right now this only checks for one address, but we shall change it to an array + the BOOST cycle up there
+                //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs"; // galimba testing
+                {
                     CBitcoinAddress address_to_block(bannedAddress);
                     CScript scriptPubKey_to_block = GetScriptForDestination(address_to_block.Get());
                     //std::cout << "scriptPubKey: " << txout.scriptPubKey.ToString() << std::endl; // for debugging purposes
                     if(vout[nPos].scriptPubKey.ToString() == scriptPubKey_to_block.ToString()){
-                        cout << "txout is NormalPayment from Blocked Address!" << endl;
-                        cout << " YOU'RE FUCKED!" << endl;
-                        return false;
+                        cout << "txout is Blocked because of Banned Address!" << endl;
+                        cout << "******** GET FUCKED! ********" << endl;
+                        return false; // yup, consensus layer says this funds are not available, bitch ;)
                     }
                 }
             }
