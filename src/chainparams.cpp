@@ -158,15 +158,22 @@ public:
         assert(hashGenesisBlock == uint256("0x00000ca4ce4324d11fe3a9f2abadeda5a4caad1620fdf115de8fc176adf9caf7"));
         assert(genesis.hashMerkleRoot == uint256("6d7abdfd661a3e4ee593cc158a1100e524a72ab5f065ad63b47a1ecfb82f5d4b"));
 		
-        // SEED NODES TO UPDATE ON TESTING BEFORE COIN BURN RELEASE
-        // (all old ones commented out - SUNDAY NOVEMBER 18th 2018 - DatBer)
+        // SEED NODES TO UPDATE ON COIN BURN RELEASE
+        // DatBer 11-27-18
 	
-	vSeeds.push_back(CDNSSeedData("144.202.22.75", "144.202.22.75"));       // Single node address(xbi0001)
-	vSeeds.push_back(CDNSSeedData("95.179.146.191", "95.179.146.191"));     // Single node address(xbi0002)
-	vSeeds.push_back(CDNSSeedData("108.160.131.164", "108.160.131.164"));   // Single node address(xbi0003)
-	vSeeds.push_back(CDNSSeedData("149.28.178.137", "149.28.178.137"));     // Single node address(xbi0004)
-	vSeeds.push_back(CDNSSeedData("149.248.32.66", "149.248.32.66"));       // Single node address(xbi0005)
-	vSeeds.push_back(CDNSSeedData("139.180.217.152", "139.180.217.152"));   // Single node address(xbi0006)
+	vSeeds.push_back(CDNSSeedData("45.77.66.151", "45.77.66.151"));         // Frankfurt
+	vSeeds.push_back(CDNSSeedData("199.247.24.242", "199.247.24.242"));     // Amsterdam
+	vSeeds.push_back(CDNSSeedData("95.179.198.223", "95.179.198.223"));     // London
+	vSeeds.push_back(CDNSSeedData("45.77.21.46", "45.77.21.46"));           // Tokyo
+	vSeeds.push_back(CDNSSeedData("104.238.189.176", "104.238.189.176"));   // Paris
+	vSeeds.push_back(CDNSSeedData("108.61.185.148", "108.61.185.148"));     // Sydney
+    
+    vSeeds.push_back(CDNSSeedData("45.32.134.213", "45.32.134.213"));       // Silicon Valley
+	vSeeds.push_back(CDNSSeedData("45.76.8.202", "45.76.8.202"));           // New Jersey
+	vSeeds.push_back(CDNSSeedData("149.28.13.176", "149.28.13.176"));       // Seattle
+	vSeeds.push_back(CDNSSeedData("95.179.232.26", "95.179.232.26"));       // London 2
+	vSeeds.push_back(CDNSSeedData("149.28.31.212", "149.28.31.212"));       // Tokyo 2
+	vSeeds.push_back(CDNSSeedData("45.63.27.217", "45.63.27.217"));         // Sydney 2
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 25);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 30);
