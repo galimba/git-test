@@ -50,7 +50,7 @@ bool CMasternodeSync::IsBlockchainSynced()
 
     CBlockIndex* pindex = chainActive.Tip();
 
-    if (chainActive.Height() == 287527) {
+    if (chainActive.Height() == 287860) {
         return true;
     }
 
