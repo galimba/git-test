@@ -668,16 +668,21 @@ protected:
 */
 
 // coin burn by datber 2018
-/*static const std::string bannedAddresses[] = {
-    "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",// -   902429.79321366
-    "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",// -   89104.73936230
-    "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX",// -   1628.00000000
-    "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH",// -   2517.39986800
-    "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx",// -   736.99882480
-    "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m",// -   1755.00000000
-    "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL",// -   2058.00000000
-    "BRSgFcXtP5cSt5Dc75FBKnJTkMubqZRXB1" // -   5 xbi (demo)
-    };*/
+/*        static const std::string bannedAddresses[] = {
+            "BN361g4da5japPhLx7wWqc11HxiVPbdyeF",// -   902429.79321366
+            "BRgbrahbjeuCKz58DKDiJWin8vhSch38Yx",// -   89104.73936230
+            "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX",// -   1628.00000000
+            "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH",// -   2517.39986800
+            "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx",// -   736.99882480
+            "BH56ohca4WFbDxiqkvrRxM4uhhKrnkRsv7",// -   10 xbi (demo galimba)
+            "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs",// -   1 xbi (test)
+            "BPY6WwUCybVSchHRjDHgUcSmB57fvASHdR",// -   1 xbi (test)
+            "BAdahyoLcAKkC5VnQA2TQmCrhaYiAtYDFa",// -   1 xbi (test)
+            "B9bVHN3AxCTqLRXsSPPbfjat1fHefhg2oZ",// -   1 xbi (test)
+            "BFPHgWWhQUBaLtU8pR7o5xUzqW6qCddAvz",// -   1 xbi (test)
+            "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m",// -   1755.00000000
+            "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL" // -   2058.00000000
+        };*/
 ///////////////////////////////////////
 
 #endif // BITCOIN_MAIN_H

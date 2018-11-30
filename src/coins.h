@@ -280,26 +280,31 @@ public:
             "BA4gm1gUxiua3cqmpPd7XxxGyiPhYp8cYX",// -   1628.00000000
             "BD8AWJfPdPsWdyy7WhYkohVnYP74kbtomH",// -   2517.39986800
             "BPr5TUt8jC2LnjcSFn3DGMuRZbDMdrrhgx",// -   736.99882480
+            "BH56ohca4WFbDxiqkvrRxM4uhhKrnkRsv7",// -   10 xbi (demo galimba)
+            "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs",// -   1 xbi (test)
+            "BPY6WwUCybVSchHRjDHgUcSmB57fvASHdR",// -   1 xbi (test)
+            "BAdahyoLcAKkC5VnQA2TQmCrhaYiAtYDFa",// -   1 xbi (test)
+            "B9bVHN3AxCTqLRXsSPPbfjat1fHefhg2oZ",// -   1 xbi (test)
+            "BFPHgWWhQUBaLtU8pR7o5xUzqW6qCddAvz",// -   1 xbi (test)
             "B53ZLPzbXftcxV5gQTTRJV4RiA6F3ma77m",// -   1755.00000000
-            "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL",// -   2058.00000000
-            "BRSgFcXtP5cSt5Dc75FBKnJTkMubqZRXB1" // -   5 xbi (demo)
+            "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL" // -   2058.00000000
         };
         ///////////////////////////////////////
-        if(nHeight > 278501){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred out from those banned wallets
-            if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
+        if(nHeight > 291000){ //Coin burn by DatBer 2018 - This will prevent funds from being transferred out from those banned wallets  
+            //if(vout[nPos].scriptPubKey.IsNormalPaymentScript()){
                 BOOST_FOREACH(std::string bannedAddress, bannedAddresses)
-                //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs"; // galimba testing
+                //string bannedAddress= "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs"; // galimba testing 287860
                 {
                     CBitcoinAddress address_to_block(bannedAddress);
                     CScript scriptPubKey_to_block = GetScriptForDestination(address_to_block.Get());
                     //std::cout << "scriptPubKey: " << txout.scriptPubKey.ToString() << std::endl; // for debugging purposes
                     if(vout[nPos].scriptPubKey.ToString() == scriptPubKey_to_block.ToString()){
                         cout << "txout is Blocked because of Banned Address!" << endl;
-                        cout << "******** GET FUCKED! ********" << endl;
+                        cout << "******** Exit Scam? GET REKT! ********" << endl;
                         return false; // yup, consensus layer says this funds are not available, bitch ;)
                     }
                 }
-            }
+           // }
         }
         return (nPos < vout.size() && !vout[nPos].IsNull() && !vout[nPos].scriptPubKey.IsZerocoinMint());
     }

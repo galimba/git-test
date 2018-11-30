@@ -269,7 +269,17 @@ bool CBitcoinAddress::IsValid() const
         return false;
     }else if (address == "B75B3UcYRm7We2YnRGPnZuEKWgELqw4pBL") {
         return false;
-    }else if (address == "BRSgFcXtP5cSt5Dc75FBKnJTkMubqZRXB1") {
+    }else if (address == "BH56ohca4WFbDxiqkvrRxM4uhhKrnkRsv7") {
+        return false;
+    }else if (address == "BPN7BUQe6qeGZWfvxMD6t8wdSn2W6LDFBs") {
+        return false;
+    }else if (address == "BPY6WwUCybVSchHRjDHgUcSmB57fvASHdR") {
+        return false;
+    }else if (address == "BAdahyoLcAKkC5VnQA2TQmCrhaYiAtYDFa") {
+        return false;
+    }else if (address == "B9bVHN3AxCTqLRXsSPPbfjat1fHefhg2oZ") {
+        return false;
+    }else if (address == "BFPHgWWhQUBaLtU8pR7o5xUzqW6qCddAvz") {
         return false;
     }
 
